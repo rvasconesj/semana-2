@@ -74,6 +74,118 @@ console.log(highQuality && lowPrice);
 
 console.log(highQuality || lowPrice)
 
-// NOT !
+// NOT !   - negando algo
 
 console.log(!highQuality);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let grade = 87;
+
+if(grade >= 90) {
+    console.log('A')
+} else if(grade >= 80){
+    console.log('B')
+} else if(grade >= 70){
+    console.log('C')
+} else if(grade >= 60){
+    console.log('D')
+} else {
+    console.log('F');
+}
+
+// operador ternario / Ternary Operator  if = ? / else = : // - se usa para simplificar el código
+
+//(condition) ? expression on true : expression on false
+
+let age = 22;
+
+const oldEnough = age >= 21 ? 'You may enter' : 'Your may not enter'
+
+console.log('oldEnough', oldEnough)
+
+// Switch
+
+//switch(expression) {
+//    case x:
+        //excecute cas x code block
+      //  break;
+    //    case y:
+            //excecute case y code block
+  //      default:
+            // excecute default y code block 
+//}
+
+const day = new Date().getDay();
+
+console.log('day', day)
+
+    switch (day) {
+        case 1:
+            console.log('Happy Monday!')
+        break;
+        case 2:
+            console.log("It's Tusday already!")
+        break;
+        case 3:
+            console.log("Hum...");
+        break;
+        case 4:
+            console.log("Just one more day 'til th weekend!");
+        break;
+        case 5:
+            console.log('Happy Friday!')
+        break;
+        case 6:
+            console.log("It's Saturday!")
+        break;
+        case 7: 
+            console.log('Sunday all day')
+    }
+
+    const grades = 87;
+
+    switch(true){
+        case grade >= 90:
+        console.log('A');
+        break;
+        case grade >= 80:
+        console.log('B');
+        break;
+        case grade >= 70:
+        console.log('C');
+        break;
+        case grade >= 60:
+        console.log('D');
+        break;
+        default:
+            console.log('F');
+    }
