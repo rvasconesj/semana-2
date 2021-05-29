@@ -1,18 +1,24 @@
-let { name1, email } = { name1: "John", email: "john@example.com" }
+let { name1, email2 } = { name1: "John", email2: "john@example.com" }
 console.log(name1); // "John" console.log(email) // "john@example.com"
-console.log(email);
+console.log(email2);
 
-let { name, email, rest} = { 
+//let { name, email, rest} = user;
+//const user = { 
+
+
+const user = {
     name: "John", 
     email: "john@example.com", 
     city: "Phoenix", 
     state: "AZ",
     country: "USA"
-}
-rest === { city: "Phoenix", state: "AZ", country: "USA"} // true
+};
+console.log(user);
+
+//rest === { city: "Phoenix", state: "AZ", country: "USA"} // true
 
 
-    const user = { name: "John", email: "john@example.com", city: "Phoenix", state: "AZ", country: "USA"}
-    const str = `({ name, email, rest} = user ).toString()`
+    //const user = { name: "John", email: "john@example.com", city: "Phoenix", state: "AZ", country: "USA"}
+    //const str = `({ name, email, rest} = user ).toString()`
 
-    console.log({ name, email, rest});
+//    console.log({ name, email, rest});
