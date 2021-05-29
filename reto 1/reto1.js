@@ -1,5 +1,5 @@
-let { name, email } = { name: "John", email: "john@example.com" }
-console.log(name); // "John" console.log(email) // "john@example.com"
+let { name1, email } = { name1: "John", email: "john@example.com" }
+console.log(name1); // "John" console.log(email) // "john@example.com"
 console.log(email);
 
 let { name, email, rest} = { 
