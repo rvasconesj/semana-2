@@ -189,3 +189,48 @@ console.log('day', day)
         default:
             console.log('F');
     }
+
+////
+
+//let authenticared = true;
+
+// let nextURL = authenticared ? (
+//    alert('You will redirect to admin area'),
+//    '/admin'
+//) : (
+//    alert('Access denied'),
+//    '/403'
+//);
+
+//console.log(nextURL);
+
+// multiple temary operators
+
+let speed = 68;
+
+let message = speed >= 128 ? 'Too Fast' : (speed >= 80 ? 'Fast' : 'OK');
+
+console.log('message', message)
+
+//result = (a !== null && a!== undefined) ? a : b;
+
+let user; 
+
+console.log(user ?? 'Anonymous');  //resumen del comentario anterior :v
+
+let firstName =null;
+let lastName =null;
+let nickName = 'corsa';
+
+console.log(firstName ?? lastName ?? nickName ?? 'Anonymous') // corsa 
+console.log(firstName || lastName || nickName || 'Anonymous') // corsa - mal uso, no hacerlo
+// los dos palotes || retornan si el primer valor es true, si le mandas un booleano solo evalúa si es true. 
+// || No sirve con objetos
+// ?? evalúa que exista la información
+
+let height = 0;
+
+console.log(height || 100); // 100
+console.log(height ?? 100); //0;
+
+
