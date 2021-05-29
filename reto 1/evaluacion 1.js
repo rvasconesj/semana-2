@@ -1,12 +1,12 @@
-//var name = 'Rodrigo';
-//let admin = name;
+var name = 'Rodrigo';
+let admin = name;
 
-//console.log(name)
+console.log(name)
 
           //  //alert(admin);
-//alert(`Hello ${admin}`);
+alert(`Hello ${admin}`);
 
 // ejercicio 2
 
-var planet = 'Tierra';
-let 
+//var planet = 'Tierra';
+//let 
