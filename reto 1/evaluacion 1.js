@@ -31,9 +31,52 @@ let name = "Ilya";
 
 // ejercicio 5
 
-var user = {
-    surName: 'John',
+//const user = {
+//    surName: 'John',
+//    lastName: 'Smith'
+//}
+
+//console.log(user)
+
+//const originalString = 'John'  
+//console.log('newString', originalString.replace('John', 'Pete'))
+
+const user2 = {
     lastName: 'Smith'
 }
 
-console.log(user)
+console.log(user2)
+
+
+// ejercicio 6
+
+//let schedule = {};
+
+//function isEmpty(schedule) {
+//    return Object.keys(schedule).length === 0;
+//};
+
+//alert( isEmpty(schedule) ); // true
+
+    //schedule["8:30"] = "get up";
+//alert( isEmpty(schedule) ); // false
+
+// ejercicio 7
+
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+    };
+
+let fullSalaries = 0;
+    for (let sum of Object.values(salaries)) {
+        fullSalaries += sum;
+    }
+
+    alert(fullSalaries)
+
+// ejercicio 8
+
+
+
