@@ -41,11 +41,22 @@ let name = "Ilya";
 //const originalString = 'John'  
 //console.log('newString', originalString.replace('John', 'Pete'))
 
-//const user2 = {
-//    lastName: 'Smith'
-//}
+let user = {};
 
-//console.log(user2)
+user.name = 'John';
+user.lastname = 'Smith';
+
+user.name = 'Pete';
+
+delete user.lastname;
+
+console.log('user', user);
+
+// const user2 = {
+//     lastName: 'Smith'
+// }
+
+// console.log(user2)
 
 
 // ejercicio 6
@@ -63,18 +74,18 @@ let name = "Ilya";
 
 // ejercicio 7
 
-//let salaries = {
- //   John: 100,
- //   Ann: 160,
- //   Pete: 130
- //   };
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+    };
 
-//let fullSalaries = 0;
-//    for (let sum of Object.values(salaries)) {
-//        fullSalaries += sum;
-//    }
+let fullSalaries = 0;
+    for (let sum of Object.values(salaries)) {
+        fullSalaries += sum;
+    }
 
-//    alert(fullSalaries)
+    alert(fullSalaries)
 
 // ejercicio 8
 
