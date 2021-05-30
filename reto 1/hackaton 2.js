@@ -45,3 +45,27 @@ console.log(styles);
 
 styles.splice(0, 0, "Rap", "Reggae");
 console.log(styles);
+
+// Ejercicio 3
+
+function sumInput() {
+
+    let numbers = [];
+    
+    while (true) {
+       let ask = prompt("Por favor indica un número", 0);
+
+       if (ask === "" || ask === null || !isFinite(ask)) break;
+    
+       numbers.push(+ask);
+    }
+                     
+    let sum = 0;
+    for (let number of numbers) {
+        sum += number;
+    }
+    document.write(sum); // :v
+    return sum;
+    
+}
+    alert( sumInput() );
