@@ -48,24 +48,38 @@ console.log(styles);
 
 // Ejercicio 3
 
-function sumInput() {
+// function sumInput() {
 
-    let numbers = [];
+//    let numbers = [];
     
-    while (true) {
-       let ask = prompt("Por favor indica un número", 0);
+//    while (true) {
+//       let ask = prompt("Por favor indica un número", 0);
+//
+//       if (ask === "" || ask === null || !isFinite(ask)) break;
+//    
+//       numbers.push(+ask);
+//    }
+//                     
+//    let sum = 0;
+//    for (let number of numbers) {
+//        sum += number;
+//   }
+//    document.write(sum); // :v
+//    return sum;
+ //   
+// }
+//    alert( sumInput() );
 
-       if (ask === "" || ask === null || !isFinite(ask)) break;
+    // ejercicio 4
     
-       numbers.push(+ask);
-    }
-                     
-    let sum = 0;
-    for (let number of numbers) {
-        sum += number;
-    }
-    document.write(sum); // :v
-    return sum;
-    
-}
-    alert( sumInput() );
+ //   function filterRange(arr, a, b) {
+        
+ //       return arr.filter(item => (a <= item && item <= b));
+                                    }                       
+    //   let arr = [5, 3, 8, 1];
+    //   alert( arr ); // 5,3,8,1 (not modified)
+       
+     //  let filtered = filterRange(arr, 1, 4);
+     //  alert( filtered ); // 3,1 (matching values)
+
+// ejercicio 5 
