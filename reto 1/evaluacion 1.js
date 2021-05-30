@@ -41,11 +41,11 @@ let name = "Ilya";
 //const originalString = 'John'  
 //console.log('newString', originalString.replace('John', 'Pete'))
 
-const user2 = {
-    lastName: 'Smith'
-}
+//const user2 = {
+//    lastName: 'Smith'
+//}
 
-console.log(user2)
+//console.log(user2)
 
 
 // ejercicio 6
@@ -63,20 +63,35 @@ console.log(user2)
 
 // ejercicio 7
 
-let salaries = {
-    John: 100,
-    Ann: 160,
-    Pete: 130
-    };
+//let salaries = {
+ //   John: 100,
+ //   Ann: 160,
+ //   Pete: 130
+ //   };
 
-let fullSalaries = 0;
-    for (let sum of Object.values(salaries)) {
-        fullSalaries += sum;
-    }
+//let fullSalaries = 0;
+//    for (let sum of Object.values(salaries)) {
+//        fullSalaries += sum;
+//    }
 
-    alert(fullSalaries)
+//    alert(fullSalaries)
 
 // ejercicio 8
 
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My Menu"
+};
 
+function multiplyNumeric(obj) {
+    for (let key in obj) {
+        if(typeof obj[key] === 'number') {
+         obj[key] *= 2;
+        }
+    }
+    return obj;
+}
 
+console.log(menu);
+console.log(multiplyNumeric(menu));
