@@ -103,6 +103,13 @@ function multiplyNumeric(obj) {
     }
     return obj;
 }
+<<<<<<< HEAD
+=======
+
+console.log(menu);
+console.log(multiplyNumeric(menu));
+
+>>>>>>> c750fbee2d9ebeec34e0192778f29cb87d7de090
 
 console.log(menu);
 console.log(multiplyNumeric(menu));
