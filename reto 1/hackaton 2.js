@@ -75,7 +75,7 @@ console.log(styles);
  //   function filterRange(arr, a, b) {
         
  //       return arr.filter(item => (a <= item && item <= b));
-                                    }                       
+ //                                   }                       
     //   let arr = [5, 3, 8, 1];
     //   alert( arr ); // 5,3,8,1 (not modified)
        
@@ -83,3 +83,17 @@ console.log(styles);
      //  alert( filtered ); // 3,1 (matching values)
 
 // ejercicio 5 
+
+function copySorted(arr) {
+    return arr.slice().sort();   
+  }
+  
+  let arr = ["HTML", "JavaScript", "CSS"];
+  
+  let sorted = copySorted(arr);
+
+alert( sorted ); // CSS, HTML, JavaScript
+
+alert( arr ); // HTML, JavaScript, CSS (no changes)
+
+// Ejercicio 6
