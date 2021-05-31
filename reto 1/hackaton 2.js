@@ -84,16 +84,37 @@ console.log(styles);
 
 // ejercicio 5 
 
-function copySorted(arr) {
-    return arr.slice().sort();   
-  }
+// function copySorted(arr) {
+//    return arr.slice().sort();   
+//  }
   
-  let arr = ["HTML", "JavaScript", "CSS"];
+//  let arr = ["HTML", "JavaScript", "CSS"];
   
-  let sorted = copySorted(arr);
+//  let sorted = copySorted(arr);
 
-alert( sorted ); // CSS, HTML, JavaScript
+// alert( sorted ); // CSS, HTML, JavaScript
 
-alert( arr ); // HTML, JavaScript, CSS (no changes)
+// alert( arr ); // HTML, JavaScript, CSS (no changes)
 
 // Ejercicio 6
+
+
+
+
+// Ejercicio 8
+
+let mensaje = (login == 'Empleado' ) 
+        ? 'Hola' : (login == 'Director' ) 
+        ? 'Saludos' : (login == '' ) 
+        ? 'No login' : '';
+
+       if (login == 'Empleado' ) {
+mensaje = 'Hola';
+} else if (login == 'Director' ) {
+mensaje = 'Saludos';
+} else if (login == '') {
+mensaje = 'Sin inicio de sesión';
+} else {
+mensaje = '';
+};
+
