@@ -125,8 +125,53 @@ for (let [index, shark] of sharks.entries()) {
 // 1 tiger
 // 2 hammerhead
 
-let sharkString = 'sharks'; 
+// for of
+
+let sharkString = 'sharks';    //deletrea el string 
 
 for (let shark of sharkString) {
     console.log(shark)
 }
+
+// for each
+
+// const foods = [
+//    {name: 'Burrito'},
+//    {name: 'Pizza'},
+//    {name: 'Burger'},
+//    {name: 'Pasta'}
+// ];
+
+// for (let i = 0; i < foods.length; i++) {
+//     console.log(`i value ${i} | Food Name:`, foods[i]);
+// }
+
+// foods.forEach((food, index) => {
+//     console.log(`index value: ${index} | Food Name:`, food);
+// })
+
+const foods = [
+    {name: 'Burrito', ingredients: ['floor', 'salt', 'water']},
+    {name: 'Pizza', ingredients: ['floor', 'salt', 'water']},
+    {name: 'Burger', ingredients: ['sandwich', 'ketchup', 'mustard']},
+    {name: 'Pasta', ingredients: ['floor', 'water', 'salt']}
+ ];
+
+ for (let i = 0; i < foods.length; i++){
+     let food = foods[i];
+     console.log('food', food);
+     for (let j = 0; j < food.ingredients.length; j++) {
+         let ingredient = food.ingredients[j];
+         console.log(ingredient)
+     }
+ }
+
+ // diseño atomic : de grande a pequeño
+ // components --> templates --> organisms --> molecules --> atoms
+
+ foods.forEach((food) => {           // es mejor usar este arreglo en vez de for ->este se usa para ciertos casos complejos
+     console.log(food);
+     food.ingredients.forEach((ingredient) => {
+         console.log(ingredient)
+     })
+ })
