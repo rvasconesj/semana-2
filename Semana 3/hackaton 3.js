@@ -8,10 +8,6 @@ let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare"
 
 //alert( unique(values) ); // Hare, Krishna, :-O
 
-// ejercicio 1
-
-//let arr = ["nap", "panear", "are", "eracheaters", "hectares", "teachers"];
-
 
 
 //ejercicio 2
@@ -44,16 +40,16 @@ console.log(keys)
 
 // Ejercicio 5
 
-const ask = (question, yes, no) => {    // convertido en '=>', las condicionales quedan dentro del {}
-    if (confirm(question)) yes();
-    else no();
-};
+// const ask = (question, yes, no) => {    // convertido en '=>', las condicionales quedan dentro del {}
+//    if (confirm(question)) yes();
+//    else no();
+// };
   
-  ask(
-    "Do you agree?",
-    () => alert("You agreed."),               // con arrow ya no necesita {}
-    () => alert("You canceled the execution.")
-  );
+//  ask(
+//    "Do you agree?",
+//    () => alert("You agreed."),               // con arrow ya no necesita {}
+//    () => alert("You canceled the execution.")
+//  );
 
   // ejercicio 8
 
@@ -71,3 +67,31 @@ const ask = (question, yes, no) => {    // convertido en '=>', las condicionales
     }
     };
 
+// recursiva
+
+// function printList(list) {
+
+//    console.log(list.value);  // muestra el elemento actual
+  
+//    if (list.next) { 
+//      printList(list.next);  // haz lo mismo con el resto de la lista 
+//    }
+  
+//  }
+  
+//  printList(list);
+
+// loop
+
+function printList(list) {
+    
+    while (list) {
+      console.log(list.value);
+      list = list.next;
+    }
+  
+  }
+
+  printList(list);
+
+  // ejercicio  
