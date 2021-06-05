@@ -40,14 +40,14 @@ console.log(keys)
 // La forma de prefijo ++ i:
 //let i = 0;while (++i < 5) alert( i ); //muestra los valores del 1 a 4 sin contar 0 porque ++i salta un valor que es 0.
 // La forma sufijo i ++
-let i = 0;while (i++ < 5) alert( i ); //cuenta los 5 valores, desde el 0. se cumple que desde el 0 al 4 son menores a 5
+//let i = 0;while (i++ < 5) alert( i ); //cuenta los 5 valores, desde el 0. se cumple que desde el 0 al 4 son menores a 5
 
 // Ejercicio 5
 
-function ask(question, yes, no) {
+const ask = (question, yes, no) => {    // convertido en '=>', las condicionales quedan dentro del {}
     if (confirm(question)) yes();
     else no();
-  }
+};
   
   ask(
     "Do you agree?",
@@ -55,5 +55,19 @@ function ask(question, yes, no) {
     () => alert("You canceled the execution.")
   );
 
-  // ejercicio 6
+  // ejercicio 8
+
+  let list = {
+    value: 1,
+    next: {
+    value: 2,
+    next: {
+    value: 3,
+    next: {
+    value: 4,
+    next: null
+    }
+    }
+    }
+    };
 
