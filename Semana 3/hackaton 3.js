@@ -83,16 +83,16 @@ console.log(keys)
 
 // loop
 
-function printList(list) {
+// function printList(list) {
     
-    while (list) {
-      console.log(list.value);
-      list = list.next;
-    }
+//    while (list) {
+//      console.log(list.value);
+//      list = list.next;
+//    }
   
-  }
+//  }
 
-  printList(list);
+//  printList(list);
 
   // ejercicio  6
 
@@ -101,28 +101,50 @@ function printList(list) {
 // counter.decrease () debería disminuir el contador en 1.
 
 function makeCounter() {
-    let count = 0;
+   // let count = 100;
   
     function counter() {
-      return count++;
-    }
+      return counter.count++;
+    };
   
-    counter.set = value => count = value;
-  
+    counter.count = 0;
     counter.decrease = () => count--;
-  
     return counter;
-  }
+    
+}
+    let counter = makeCounter();
+    counter.count = 100;
+    console.log(counter());
+
+  
+  
+
+
+
 
   // ejercicio 7
 
-  let number;
+//  let number;
 
-do {
-    number = prompt("Ingresa un valor mayor a 100", 0);
-} while (number <= 100 && number);
+// do {
+//    number = prompt("Ingresa un valor mayor a 100", 0);
+// } while (number <= 100 && number);
 
-alert(number);
+//alert(number);
 
 // ejercicio 1
+
+// function aclean(arr) {
+  
+//    for (let anagram of arr) {
+//     let sorted = anagram.toLowerCase().split("").sort().join(""); 
+//      map.set(sorted, anagram);
+//    }
+  
+//    return Array.from(map.values());
+//  }
+
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+// alert( aclean(arr) ); 
+
 
