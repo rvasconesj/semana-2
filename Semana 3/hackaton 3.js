@@ -1,0 +1,59 @@
+// ejercicio 0
+
+function unique(arr) {
+    return Array.from(new Set(arr));
+  }
+
+let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+
+//alert( unique(values) ); // Hare, Krishna, :-O
+
+// ejercicio 1
+
+//let arr = ["nap", "panear", "are", "eracheaters", "hectares", "teachers"];
+
+
+
+//ejercicio 2
+
+let map = new Map();
+map.set("name", "John")
+
+let keys = Array.from(map.keys()); // se tranforma en array para que pueda retornar
+
+keys.push("more");   // no es 'functionkeys.push
+console.log(keys)
+
+
+// ejercicio 3
+
+//let i = 3;
+//while (i) { alert( i-- );}
+
+//Cuál es el último valor alertado por este código? ¿Por qué?
+// El último valor es 1. Porque while convierte en booleano los valores, por lo tanto, en el conteo
+// de números, '0' es false y la cadena termina.
+
+
+// Ejercicio 4
+
+// La forma de prefijo ++ i:
+//let i = 0;while (++i < 5) alert( i ); //muestra los valores del 1 a 4 sin contar 0 porque ++i salta un valor que es 0.
+// La forma sufijo i ++
+let i = 0;while (i++ < 5) alert( i ); //cuenta los 5 valores, desde el 0. se cumple que desde el 0 al 4 son menores a 5
+
+// Ejercicio 5
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+  }
+  
+  ask(
+    "Do you agree?",
+    () => alert("You agreed."),               // con arrow ya no necesita {}
+    () => alert("You canceled the execution.")
+  );
+
+  // ejercicio 6
+
