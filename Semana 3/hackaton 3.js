@@ -94,4 +94,35 @@ function printList(list) {
 
   printList(list);
 
-  // ejercicio  
+  // ejercicio  6
+
+// counter () debe devolver el siguiente número (como antes).
+// counter.set (value) debe establecer el contador en valor.
+// counter.decrease () debería disminuir el contador en 1.
+
+function makeCounter() {
+    let count = 0;
+  
+    function counter() {
+      return count++;
+    }
+  
+    counter.set = value => count = value;
+  
+    counter.decrease = () => count--;
+  
+    return counter;
+  }
+
+  // ejercicio 7
+
+  let number;
+
+do {
+    number = prompt("Ingresa un valor mayor a 100", 0);
+} while (number <= 100 && number);
+
+alert(number);
+
+// ejercicio 1
+
