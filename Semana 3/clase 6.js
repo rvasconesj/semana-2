@@ -96,4 +96,3 @@ console.log(`square`, square(2));
     //global: fuera del bloque del cógido
     //local: dentro de un bloque de código
 
-    
