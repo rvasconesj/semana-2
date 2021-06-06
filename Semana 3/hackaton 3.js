@@ -100,21 +100,25 @@ console.log(keys)
 // counter.set (value) debe establecer el contador en valor.
 // counter.decrease () debería disminuir el contador en 1.
 
+
 function makeCounter() {
-   // let count = 100;
-  
-    function counter() {
-      return counter.count++;
-    };
-  
-    counter.count = 0;
-    counter.decrease = () => count--;
-    return counter;
-    
-}
-    let counter = makeCounter();
-    counter.count = 100;
-    console.log(counter());
+     let count = 10;
+     function counter() {
+       return counter.count--;
+     };
+     counter.count = 10;       
+     counter.set = value => count = value;
+     counter.countDown = () => count--;
+   
+     return counter;
+   };
+
+   let counter = makeCounter();
+   console.log(counter() ); 
+   console.log(counter() ); 
+   console.log(counter() );
+  // alert(counter() );
+
 
   
   
@@ -146,5 +150,3 @@ function makeCounter() {
 
 // let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 // alert( aclean(arr) ); 
-
-
