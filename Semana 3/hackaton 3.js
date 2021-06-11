@@ -117,7 +117,7 @@ function makeCounter() {
    console.log(counter() ); 
    console.log(counter() ); 
    console.log(counter() );
-  // alert(counter() );
+  
 
 
   
