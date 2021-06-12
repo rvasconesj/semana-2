@@ -71,19 +71,25 @@
 
 // ejercicio 5
 
-async function wait() {
-    await new Promise(resolve => setTimeout(resolve, 1000));
+// async function wait() {
+//     await new Promise(resolve => setTimeout(resolve, 1000));
   
-    return 10;
-  }
+//     return 10;
+//   }
   
-  function f() {
-      wait().then(result => 
-        console.log(result)
-    );
-  }
-f()
+//   function f() {
+//       wait().then(result => 
+//         console.log(result)
+//     );
+//   }
+// f()
  
 // ejercicio 6
 
+new Promise(function(resolve, reject) {
+    setTimeout(() => {
+    reject (new Error("Whoops!"));
+    }, 1000);
+    }).catch(alert);
 
+    // No carga porque se tenía que aplicar la función reject en vez de thrown y terminar el llamado con ()
