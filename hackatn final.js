@@ -86,10 +86,25 @@
  
 // ejercicio 6
 
-new Promise(function(resolve, reject) {
-    setTimeout(() => {
-    reject (new Error("Whoops!"));
-    }, 1000);
-    }).catch(alert);
+// new Promise(function(resolve, reject) {
+//     setTimeout(() => {
+//     reject (new Error("Whoops!"));
+//     }, 1000);
+//     }).catch(alert);
 
     // No carga porque se tenía que aplicar la función reject en vez de thrown y terminar el llamado con ()
+
+ // ejercicio 7
+ 
+ function printNumbers (from, to) {
+     let counter = from;
+
+     let timer = setInterval(function() {
+         console.log(counter);
+         if (counter == to) {
+            clearInterval(timer);
+         } 
+         counter++;
+     }, 1000);
+ }
+ printNumbers(1, 5);
