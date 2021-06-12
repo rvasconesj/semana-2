@@ -29,3 +29,33 @@ delay(3000).then(() => alert('runs after 3 seconds'))
 
 // ejercicio 2
 
+promise.then(f1).catch(f2);  // 1) catch es el que jala la siguiente opción en caso la primera sea false
+Versus:
+promise.then(f1, f2)         // 2) .then no tiene a donde derivar la siguiente opción.
+
+// Son códigos diferentes. 
+
+// ejercicio 3
+
+function loadJson(url) {
+    return fetch(url).then(response => {
+    if (response.status == 200) {
+        return response.json();
+    } else {
+        throw new Error(response.status);
+    }
+  });
+}
+  loadJson('no-such-user.json').catch(alert); // Error: 404
+  
+  //convert to async await
+async function loadJson('example.json') {
+    let jsonUrl = await fetch(url);
+    let url = await jsonUrl.json();
+
+    await new Promise((resolve, reject) => 
+    setTimeout(resolve, 200));
+
+
+    
+}
