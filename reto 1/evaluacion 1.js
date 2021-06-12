@@ -105,4 +105,4 @@ function multiplyNumeric(obj) {
 }
 
 console.log(menu);
-console.log(multiplyNumeric(menu));
+console.log(multiplyNumeric(menu));clearInterval
