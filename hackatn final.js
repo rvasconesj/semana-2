@@ -83,7 +83,7 @@ class HttpError extends Error {
     } else {
         throw new HttpError(response); 
     }
-    }
+}
     
     
     // Ask for a user name until github returns a valid user
@@ -92,19 +92,23 @@ class HttpError extends Error {
         let user;
         while(true) {
     let name = prompt("Enter a name?", "iliakan"); 
+   
     try {
-        user = await loadJson(`https://api.github.com/users/${name}`) 
-   break;
-} catch(err) { 
+        user = await loadJson(`https://api.github.com/users/${name}`); 
+        break;
+        } catch(err) { 
     if (err instanceof HttpError && err.response.status == 404) { 
         alert("No such user, please reenter."); 
 } else { 
     throw err; 
 } 
-}};
+}}
+
+alert(`Full name: ${user.name}.`);
+  return user;
 }
 
-alert(demoGithubUser());
+(demoGithubUser());  //estaba llamando a una variable :v
 
 // ejercicio 5
 
